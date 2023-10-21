@@ -61,6 +61,11 @@ body{
     transition: ease-in .4s;
 }
 
+.toggle-menu,
+.info-content_subtitle{
+    display: none; /*indica que no debe mostrar el elemento*/
+}
+
 .main{
     margin: 0 auto;
     width: 80vw;
@@ -71,7 +76,7 @@ body{
 }
 
 h1{
-    font-size: 3em;
+    font-size: clamp(4vw,1.5em,3em); /*para que la tipografia sea responsive*/
 }
 
 span{
@@ -278,3 +283,9 @@ footer{
     margin-top: 1em;
 }
 
+@media screen and (max-width: 800px) {
+    .main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

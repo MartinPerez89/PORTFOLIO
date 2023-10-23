@@ -79,7 +79,7 @@ body {
 .main img {
   width: 400px;
   border: 5px solid aqua;
-  min-height: 300px ;
+  min-height: 300px;
   min-width: 200px; /*establece valores minimos de ancho y alto*/
 }
 
@@ -362,7 +362,7 @@ footer {
     display: none; /*oculta el parrafo*/
   }
 
-  .form{
+  .form {
     width: 80vw;
   }
 }

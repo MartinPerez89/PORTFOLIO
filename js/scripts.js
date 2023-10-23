@@ -1,4 +1,4 @@
-//Obtener los elementos del HTML para poder agregarle funcionalidad 
+//Obtener los elementos del HTML para poder agregarle funcionalidad
 
 let menu = document.getElementById("menu");
 let toggle_open = document.getElementById("toggle_open");
@@ -20,5 +20,3 @@ function toggleMenu() {
     toggle_close.style.display = "none";
   }
 } /*Accede a la lista de clases del elemento, y agrega la clase "show-menu" si no esta presente, o la elimina si esta presente, luego muestra el menu o la X dependiendo de si el menu se esta mostrando o no*/
-
-

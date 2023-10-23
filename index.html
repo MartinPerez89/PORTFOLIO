@@ -17,16 +17,15 @@
           <div class="logo">
             <h2><i class="fa-solid fa-code"></i> M<span>P</span></h2>
           </div>
-          <ul class="menu">
+          <ul class="menu" id="menu">
             <li><a class="active" href="#">Home</a></li>
             <li><a href="#about">About me</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <div class="toggle-menu">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-close"></i>
-
+            <i class="fas fa-bars" id="toggle_open"></i>
+            <i class="fas fa-close" id="toggle_close"></i>
           </div>
         </nav>
       </header>
@@ -34,6 +33,11 @@
         <div class="info-content">
           <span class="info-content_subtitle">Frontend Developer</span>
           <h1>I m <span>Martin</span> Perez</h1>
+          <div class="social-networks">
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
           <p class="info-content_p">
             I am a passionate frontend developer with 3 years of experience in
             creating stunning websites and web applications. My goal is to
@@ -144,7 +148,11 @@
         <div class="divider"></div>
       </div>
       <div class="container-contact">
-        <img src="./img/yo_dev.png" alt="Martin Perez Developer" />
+        <img
+          class="contact-img"
+          src="./img/yo_dev.png"
+          alt="Martin Perez Developer"
+        />
         <div class="contact-form">
           <h4>Send me a message...</h4>
           <form class="form">
@@ -168,5 +176,7 @@
         <a href=""><i class="fa-brands fa-linkedin"></i></a>
       </div>
     </footer>
+
+    <script src="/js/scripts.js"></script>
   </body>
 </html>

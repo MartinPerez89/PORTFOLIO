@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
     <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="shortcut icon" href="img/yo_dev-removebg-preview.png" />
     <script
       src="https://kit.fontawesome.com/cab690e2b6.js"
       crossorigin="anonymous"
     ></script>
+    <title>Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <header>
+    <div class="container mx-0">
+      <header class="header">
         <nav class="navbar">
           <div class="logo">
             <h2><i class="fa-solid fa-code"></i> M<span>P</span></h2>
@@ -33,6 +34,7 @@
         <div class="info-content">
           <span class="info-content_subtitle">Frontend Developer</span>
           <h1>I m <span>Martin</span> Perez</h1>
+          <h2>And I m a <span class="multiple-text"></span></h2>
           <div class="social-networks">
             <a href="https://twitter.com/Martin87342184" target="_blank"
               ><i class="fa-brands fa-x-twitter"></i
@@ -63,7 +65,7 @@
     <section class="about-section" id="about">
       <img
         src="./img/WhatsApp Image 2023-10-08 at 15.56.49_031f2a14.jpg"
-        alt="Martin Perez Face"
+        alt="Martin Perez Face" class="about-img"
       />
       <div class="about-info">
         <h2>About me</h2>
@@ -173,8 +175,8 @@
       </div>
     </section>
 
-    <footer>
-      <div class="footer-content">
+    <footer class="footer-content">
+      <div>
         <h2>Martin Perez</h2>
         <h5>Frontent Developer</h5>
       </div>
@@ -193,6 +195,8 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="/js/scripts.js"></script>
+    <script src="/js/typed.js"></script>
   </body>
 </html>

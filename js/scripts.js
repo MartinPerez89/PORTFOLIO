@@ -11,8 +11,8 @@ toggle_close.addEventListener(
 ); /*al efectuar un "click" en esos elementos, se llama a la funcion toggleMenu */
 
 function toggleMenu() {
-  menu.classList.toggle("show-menu");
-  if (menu.classList.contains("show-menu")) {
+  const showMenu = menu.classList.toggle("show-menu");
+  if (showMenu) {
     toggle_open.style.display = "none";
     toggle_close.style.display = "block";
   } else {

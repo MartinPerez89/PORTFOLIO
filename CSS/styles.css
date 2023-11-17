@@ -1,9 +1,15 @@
+@import url("reset.css");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body {
@@ -12,6 +18,17 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
+    padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  background-color: #191c32;
+  z-index: 1;
 }
 
 .container {
@@ -23,11 +40,13 @@ body {
 
 .navbar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding: 2em;
+  padding: 0.5em;
 }
 
 .logo {
+  font-size: 1.25rem;
   margin-top: -7px;
 }
 
@@ -69,10 +88,11 @@ body {
 
 .main {
   margin: 0 auto;
-  width: 80vw;
-  height: 80vh;
+  width: 100vw;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /*genera 2 columnas iguales*/
+  justify-content:center;
   align-items: center;
 }
 
@@ -219,7 +239,7 @@ span {
   margin-top: 1em;
 }
 
-.contact-section {
+#contact {
   height: 100vh;
   width: 100vw;
   background-color: #191c32;
@@ -233,8 +253,9 @@ span {
 
 .container-contact {
   display: flex;
-  padding: 3em;
+  padding: 2.5em;
   margin: 0 auto;
+  padding: 0 auto;
 }
 
 .form {
@@ -261,18 +282,17 @@ span {
   border: 1px solid white;
 }
 
-footer {
+.footer-content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 200px;
-  background-color: aqua;
+  background-color: #191c32;
 }
 
 .footer-content h2 {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .footer-content h5,
@@ -284,6 +304,13 @@ footer {
   color: white;
 }
 
+.social-networks i:hover{
+  background-color: white;
+  color: grey;
+  border-radius: 0.25rem;
+  padding: 0.10rem;
+}
+
 .social-networks {
   display: flex;
   justify-content: space-evenly;
@@ -292,7 +319,7 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  /*version mobile*/
+  /*mobile version*/
   .menu {
     flex-direction: column;
     justify-content: center;
@@ -309,7 +336,7 @@ footer {
   }
 
   .show-menu {
-    transform: translateX(0%);
+    transform: translateX(-10%);
     transition: all 0.5s ease-in-out;
   }
 
@@ -338,8 +365,14 @@ footer {
   }
   .main img,
   .about-section {
-    width: min(85%); /*reduce el tamaño de la imagen*/
+    width: min(60%); /*reduce el tamaño de la imagen*/
     height: auto;
+  }
+
+  .container-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .info-content {
     display: flex;
@@ -360,6 +393,10 @@ footer {
   .info-content_p,
   .contact-img {
     display: none; /*oculta el parrafo*/
+  }
+
+  #about{
+    width: 100%;
   }
 
   .form {

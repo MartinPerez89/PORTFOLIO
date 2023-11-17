@@ -24,9 +24,9 @@ Explicación breve de la estructura del proyecto:
 
 ## Demostración en Vivo
 
-Incluye un enlace a tu sitio web en línea para que los visitantes puedan ver y explorar tu portfolio.
+Se incluye un enlace al sitio web en línea para que los visitantes puedan ver y explorar mi portfolio.
 
-[Ver Portfolio en Vivo](enlace-a-tu-sitio-web)
+[Ver Portfolio en Vivo](https://martinperez89.github.io/PORTFOLIO/)
 
 ## Características Principales
 
@@ -53,8 +53,7 @@ Incluye información de contacto para que los visitantes puedan comunicarse cont
 - Nombre: [Martin]
 - Correo Electrónico: [martinchop1989@gmail.com]
 - LinkedIn: [https://www.linkedin.com/in/martin-ezequiel-perez-01a65a17b]
-- Sitio Web: [Tu Sitio Web Personal]
 
 ## Licencia
 
-Este proyecto está bajo la licencia [Nombre de la Licencia]. Consulta el archivo `LICENSE` para obtener más detalles.
+Este proyecto está bajo la licencia [Creative Commons]. Consulta el archivo `LICENSE` para obtener más detalles.
